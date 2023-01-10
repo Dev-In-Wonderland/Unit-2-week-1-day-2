@@ -137,7 +137,7 @@ section h2 {
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: -0.03em;
@@ -161,7 +161,7 @@ h1 + p {
   p,
   ul,
   ol {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   h2 {
@@ -207,6 +207,8 @@ h1{position: relative;}
 
 #underline{
   position: absolute;
+    bottom: -1px;
+    top: 370px;
 
 
 }
@@ -344,6 +346,13 @@ aside div {
   padding: 1em;
 }
 
+
+.tag {
+  float: right;
+  color: lightgray;
+  font-size: 3em
+}
+
 @media screen and (min-width: 1200px) {
   aside div {
     display: inline-block;
@@ -413,7 +422,109 @@ footer a {
   aside,
   footer,
   .social,
-  .toTop {
+  .toTop, .fixed {
     display: none;
   }
+}
+
+
+
+
+.button {
+  position: fixed;
+  left: 0;
+  bottom: 0
+}
+
+
+.fixed {
+  display: inline-block;
+  background-color: rgba(194, 194, 194, 0.783);
+  border-radius: 8px;
+  border: 0.3rem solid white;
+  padding: 0.8rem;
+  position: fixed;
+  right: -15px;
+  z-index: 3;
+
+}
+
+.calen {
+  color: #3063bf;
+  margin-top:10.9em
+
+}
+
+svg{
+  width:19em
+}
+
+.plus{
+  color: #3063bf;
+  margin-top: 4.65em
+}
+
+.goTop {
+  color: mediumvioletred;
+  bottom:0;
+  margin-bottom: 1rem
+}
+
+@media screen and (min-width: 800px) {
+  h1{
+    font-size: 3.8rem
+  }
+
+  svg{
+    width: 35em
+  }
+
+  #underline{
+    top: 412px
+  }
+
+  .calen, .plus {
+    top:0;
+    z-index: 9000;
+    margin-top: 6.4em
+  }
+
+  .plus{
+    margin-top: 10px;
+  }
+
+  .goTop {
+    margin-bottom:0.5em
+
+  
+  
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  body{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header .brand {
+    width: 70%
+  }
+
+  h1{
+    font-size: 3.5em
+  }
+
+  #underline{
+    top: 226px;
+    right: 110px
+  }
+
+
+aside div {
+  padding:0
+}
+
 }
